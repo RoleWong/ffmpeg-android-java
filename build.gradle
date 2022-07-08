@@ -4,6 +4,8 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenLocal()
+        maven {url 'https://maven.google.com'}
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.2.1'
@@ -15,6 +17,9 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        google()
+        mavenLocal()
+        maven {url 'https://maven.google.com'}
     }
 }
 
